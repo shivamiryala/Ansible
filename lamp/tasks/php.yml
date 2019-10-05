@@ -1,0 +1,6 @@
+---
+- name: install php
+  apt: 
+    name: php
+    state: latest
+  notify: restart apache2 server

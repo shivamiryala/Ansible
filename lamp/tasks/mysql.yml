@@ -1,0 +1,14 @@
+---
+
+- name: install mariadb server
+  apt:
+    name: mariadb-server
+    state: latest
+- name: install php_mysql
+  apt: 
+    name: php-mysql
+    state: latest
+- name: start mariadb
+  service: 
+    name : mariadb
+    state: started
